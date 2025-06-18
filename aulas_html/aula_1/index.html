@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>Aula 1</title>
+    </head>
+    <body>
+        <h1> Introdução ao HTML na prática</h1>
+        <hr>
+        <h2>Resumo da parte 1 - <i>Textos</i>:</h2>
+        <p>Na primeira aula de HTML da DIO pudemos compreender a estrutura básica de HTML5 na prática. 
+            <br>Quando digo que aprendemos na prática, quero dizer que aprendemos como falar sobre as principais 
+            <br>tags funcionam. As tags que lembro de serem citadas pelo professor foram: &lt;i&gt; - <i>que deixa a fonte em itálico.</i>, 
+            <br> a tag &lt;strong&gt; - <strong>que deixa a fonte em negrito.</strong>e a tag &lt;u&gt; - <u>que deixa o texto sublinhado</u>, a tag &lt;mark&gt; - 
+            <br> <mark>que deixa em marca texto</mark>, a tag &lt;sup&gt; - <sup> que deixa o texto encima da linha, geralmente usado para potenciação em matemática</sup> 
+            <br>e mencionou também que é possivel deixar uma palavra ou frase com mais de uma tag. 
+            <br> 
+            <br>Exemplo: 
+
+            <br> <strong> <i> Deixar uma fonte em itálico e em negrito ao mesmo tempo.</i></strong> 
+            <br> para fazer isso, basta colocar uma tag de texto como &lt;i&gt; dentro de &lt;strong&gt; ou vice-versa. 
+            <br> 
+            <br> Mencionou também que não necessariamente ao usar o exemplo acima você precisa usar ambas fontes no texto todo. 
+            <br> 
+            <br>Exemplo: 
+            <br> <i> Deixar uma parte do texto em itálico <strong>mas apenas uma parte do texto em negrito mas ainda em itálico.</strong></i> 
+            <br> Para isso coloquei a tag que eu queria onde eu queria que ficasse em negrito. 
+            <br> A mesma coisa serve para sublinhar, marcar o texto, etc...</p>
+
+        <h3>Resumo 1.2:</h3>
+        <p>O professor comentou e explicou também o uso de outras tags básicas como &lt;head&gt;, &lt;title&gt;, &lt;body&gt;,
+            <br> &lt;p&gt;, do &lt;h1&gt; até o &lt;h6&gt; mostrando que esses eram títulos e subtítulos. Falou também que nem todas as tags tem fechamento. 
+            <br> As tags mencionadas até o momento todas possuem um fechamento. <strong> Ex.:</strong> &lt;i&gt; com &lt;/i&gt;, pode-se perceber que o fechamento sempre tem "/".</p>
+
+        <h2> Resumo da parte 2 - <i>Tags sem fechamento</i> e <i>atributos</i>:</h2>
+        <p> As tags que não possuem uma outra tag para fechamento mencionadas pelo professor inicialmente foram as tags &lt;input&gt; e &lt;img&gt;, pois essas 
+            <br>tags se auto fecham com "/>" no final delas mesmas. O professor também comentou sobre os atributos das tags e para que serviam. 
+            <br> Um exemplo de atributo a ser usado seria o atributo <i>type</i>, que pode ser colocado dentro da tag &lt;input&gt; para definir um tipo 
+            <br> de texto ou valor que deve ser inserido dentro de uma caixinha. 
+            <br> 
+            <br> Exemplo: &lt;input type= "text"/&gt; isso abriria uma caixa de texto como esta: <input type="text"/> onde só será aceito texto 
+            <br> como resposta, até dá para inserir números, mas não terão quaisquer validade para o sistema. 
+            <br> 
+            <br> Uma maneira de aceitar apenas números seria mudar o parâmetro "text" para "number" formando uma caixa assim: <input type="number"/>  
+            <br> que só aceita números e algumas outras letras para números científicos. 
+            <br> 
+            <br> É possivel também criar um campo para cor, usando ao invés dos parâmetros "text" ou "number", o parâmetro "color". Ex.: <input type="color"/> </p>
+
+        <h3>Resumo 2.2:</h3>
+        <p> Outra coisa importante que foi mencionada pelo professor foi que se colocarmos o atributo "style" dentro da tag &lt;strong&gt; podemos modificar a cor 
+            <br> que o "negrito" de strong vai ficar. 
+            <br> 
+            <br> Exemplo: 
+            <br>&lt;strong style="color: blue;"&gt; apenas na tag de abertura, <strong style="color:blue;">vai fazer com que o texto fique azul</strong>. 
+            <br> 
+            <br> O professor também menciona também a  tag &lt;img&gt; e diz que a mesma precisa de um atributo para funcionar, que seria o "src". O src serve para 
+            <br> validar a URL de uma imagem que deseja inserir dentro da tag &lt;img&gt; ou até mesmo uma imagem que esteja dentro da mesma pasta. 
+            <br> 
+            <br> Exemplo de como usar: 
+            <br> &lt;img&gt; src="URL ou imagem da pasta"/&gt; 
+            <br><img width="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0G9bjDMHhKa0GPZSzBi5fb_HDexkIECeIdQ&s"/> 
+            <br>Se você pegar uma imagem que ficou muito grande você pode colocar mais um atributo dentro de &lt;img&gt; chamado "width" que significa largura
+            <br> e inserir o valor necessário. Geralmente 200 é um bom tamanho de imagem! </p>
+
+        <h2>Resumo da parte 3 (final): </h2>
+        <p> Professor falou das listas ordenadas e não ordenadas. Usamos &lt;ol&gt; para listas ordenadas (a que tem ordem por números) 
+            <br> e &lt;ul&gt; para listas não ordenadas (a que tem ordem por bolinhas). Para ambas as listas, sempre será necessário usar &lt;li&gt; para incluir cada 
+            <br> item na lista, não dá para apenas colocar uma delas (&lt;ol&gt; ou &lt;ul&gt; ) e escrever entre elas. <br> <br> Exemplo errado: 
+            <br> 
+            <br> &lt;ol&gt; 
+            <br> <blockquote> qualquer item</blockquote>
+            <br>&lt;/ol&gt; 
+            <br> 
+            <br>Exemplo correto: 
+            <br>&lt;ol&gt; 
+            <br> <blockquote>&lt;li&gt;Pegar a água;&lt;/li&gt;</blockquote><br><blockquote>&lt;li&gt;Abrir garrafa;&lt;/li&gt;</blockquote>
+            <br><blockquote>&lt;li&gt;Beber a água.&lt;/li&gt;</blockquote>&lt;/ol&gt;
+            <br>
+            <br>Exemplo de lista ordenada: 
+            <br></p>
+        <ol>
+            <li>Pegar a água;</li>
+            <li>Abrir garrafa;</li>
+            <li>Beber a água.</li>
+        </ol>
+        <p> A mesma coisa serve para &lt;ul&gt;:
+             <ul>
+            <li>Pegar a água;</li>
+            <li>Abrir garrafa;</li>
+            <li>Beber a água.</li>
+            </ul>
+            <br> É também possivel abrir uma lista ordernada(ou não ordenada) dentro de um &lt;li&gt; e então será necessário <br>repetir todo o processo anterior (o do exemplo correto) dentro dessa sub-lista.</p>
+            <h3>Resumo parte 3.2:</h3>
+            <p>O tutor do curso também mencionou que é possível inserir links nos textos usando a tag &lt;a&gt; . 
+                <br>Quando se trata de usar a tag &lt;a&gt; deveremos usá-la da seguinte maneira:
+                <br>
+                <br> &lt;a href="URL"&gt;<u>A palavra ou frase que vai receber o link do href</u>&lt;/a&gt;
+                <br>Dessa maneira em que está vendo, se você clicasse na frase que recebeu o link, você iria ser redirecionado na mesma guia, não abriria uma nova guia.
+                <br>
+                <br> Exemplo:
+                <br><a href="https://www.youtube.com/watch?v=FGBhQbmPwH8&list=RDiU7oF4OXZSE&index=3">Ao clicar, você não abrirá uma guia à direita.</a> 
+                <br>
+                <br>Para que o link que seja aberto em uma guia nova à direita você deverá usar dentro de &lt;a&gt; o atributo 
+                <br> <i>target</i> e no atributo você deverá escolher a opção "blank", que abrirá uma guia à direita.
+                <br> Exemplo:  
+                <br>&lt;a href="URL" target="_blank"&gt;<u>O texto abrirá uma guia à direita.</u>&lt;/a&gt;
+                <br>Veja a seguir:
+                <br><a href="https://www.youtube.com/watch?v=4D7u5KF7SP8&list=RD4D7u5KF7SP8&start_radio=1" target="_blank">Ao clicar, você abrirá uma guia à direita.</a> 
+                <br>
+                <br> Ao usar a tag &lt;a&gt; você também consegue colocar mais um outro atributo chamado <i>title</i>.
+                Este atributo vai fazer que quando você aponte o mouse no hipertexto, apareça alguma mensagenzinha dentro de 
+                <br> um balãozinho. Pode inclusive checar os outros links e apontar neles que você verá que nada aparece, mas aponta neste daqui:
+                <br><a href="https://www.youtube.com/watch?v=iU7oF4OXZSE&list=RDiU7oF4OXZSE&start_radio=1"target="_blank" title="Daft Punk nunca é má ideia!">Não clica ainda, presta atenção no balãozinho da setinha do mouse. </a>
+                <br>
+                <br> <h3>Resumo 3.3</h3>
+                <p> Sempre que você colocar um link que não é de outro site, mas uma extensão do seu próprio, uma outra guia, você tem 
+                    <br> que já ter criado um arquivo.html dentro da pasta que você está editando no seu editor (VS Code por exemplo).
+                    <br><a href="about.html" target="_self"> Clique aqui para entender como fazer isso!</a>
+                </p>
+            </p>
+    </body>
+</html>
