@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2</title>
+</head>
+<body>
+    <h1>Trabalhando com formulários HTML</h1>
+    <hr>
+    <h2>Resumo da parte 1</h2>
+    <h3> Tag &lt;form&gt; e como usá-la:</h3>
+    <p>No início da aula o professor disse que os formulários são estruturas que não apenas ficarão disponíveis ao lado do cliente, 
+        <br>mas também será uma estrutura que caminhará lado a lado com o servidor. Mostrou que é onde mandamos nossas informações através de formulários.
+        <br>
+        <br> Veremos exemplos disso em seguida, mas primeiro precisamos descobrir como que funciona a tag &lt;form&gt;.</p>
+        <p>Para utilizarmos a tag &lt;form&gt; precisaremos digitá-la da seguinte maneira:
+            <br>
+            <br>&lt;form <i>action</i>="https:// seu.site.com" <i>name=</i>"signup" <i>method=</i>"post" <i>target=</i>"_blank" <i>autocomplete=</i>"off"&gt;
+            <br><blockquote> Nome: &lt;input <i>type=</i> "text" <i>name=</i>"name" /&gt;</blockquote>
+            <br><blockquote> Idade: &lt;input <i>type=</i> "number" <i>name=</i>"age" /&gt;</blockquote>
+            <br><blockquote> Senha: &lt;input <i>type=</i> "password" <i>name=</i>"password" /&gt;</blockquote>
+            <br><blockquote>&lt;button <i>type=</i>"submit"&gt; Enviar &lt;/button&gt;</blockquote>
+            <br>&lt;/form&gt;
+            <br>
+            <br>Digitando desta maneira geraremos isso:
+        </p>
+        <p>
+            <form action="#" method="post" name="signup" target="_blank" autocomplete="off">
+                Nome: <input type="text" name="name"><br>
+                Idade: <input type="number" name="number"><br>
+                Senha: <input type="password" name="password"><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </p>
+        <p>Chegou a hora de explicar o que tudo isso que você acaba de ver faz. Para que entenda da melhor maneira possível, explicarei por partes.</p>
+        <p> Vou explicar essa parte primeiro: &lt;form <i>action</i>="https:// seu.site.com" <i>name=</i>"signup" <i>method=</i>"post" <i>target=</i>"_blank" <i>autocomplete=</i>"off"&gt;
+            <br>Como você pode reparar, isto é a abertura da tag &lt;form&gt;, onde estão inseridos vários atributos e creio que o mais
+            <br>importante a ser explicado da parte 1 da aula seria essa abertura de tag. 
+            <br>
+            <br>Vamos então descrever o atributo "action". Este atributo manda as
+            <br>informações do formulário para um site que esteja sob seu domínio. Como não temos um site ainda, vai dar erro ao clicar em enviar no formulário de exemplo.
+            <br>
+            <br>O atributo "name" serve para identificar o formulário dentro do Javascript. Assim quando eu quiser tratar o formulário usando Javascript vai ser mais fácil de encontrar e dar sentido ao Formulário.  
+            <br>O atributo "method" pode funcionar com dois parâmetros chamados "get" ou "post", no forumulário de exemplo
+            <br> colocamos em "post", o que fará que ao clicar em enviar, as informações que você digitou não apareçam na URL da página, tornando-a mais sergura.
+            <br>O atributo "target", que serve para abrir uma guia ao lado ao enviar o formulário quando o parâmetro for "_blank", E por último mas não menos importante, o atributo "autocomplete"
+            <br> que pode ter dois parâmetros, "on" ou "off". Quando ligado, salva as informações pré preenchidas no formulário caso você cometa um erro ao enviar o formulário, fazendo com que a pessoa não perca tudo o que já digitou.</p>
+            <br>
+            <p>Agora farei outros formulários com os atributos modificados.
+                <br>
+                <br>Se "method" estivesse com o parâmetro "get" <strong>Olhe para a URL depois que clicar em enviar!</strong>:
+                <br>
+                <br>
+                <form action="#" method="get" name="signup" target="_blank" autocomplete="off">
+                Nome: <input type="text" name="name"><br>
+                Idade: <input type="number" name="number"><br>
+                Senha: <input type="password" name="password"><br>
+                <button type="submit">Enviar</button></form>
+                <br>
+                <br>Se target estivesse com o parâmetro "_self":
+                <br>
+                <br> <form action="#" method="post" name="signup" target="_self" autocomplete="off">
+                Nome: <input type="text" name="name"><br>
+                Idade: <input type="number" name="number"><br>
+                Senha: <input type="password" name="password"><br>
+                <button type="submit">Enviar</button></form>
+                <br>
+                <br>Se "autocomplete" estivesse com o parâmetro "on":
+                <br>
+                <br><form action="#" method="post" name="signup" target="_self" autocomplete="on">
+                Nome: <input type="text" name="name"><br>
+                Idade: <input type="number" name="number"><br>
+                Senha: <input type="password" name="password"><br>
+                <button type="submit">Enviar</button></form>
+                <br>
+                <br>Teve um atributo que o professor mencionou bem no finalzinho desta parte, chamado "onsubmit", o qual não foi cidado por mim até o momento.
+                <br>Estre atributo serve para gerar um evento quando a pessoa clicar em enviar. Veja o exemplo:
+                <br>
+                <br><form action="#" method="post" name="singup" target="_self" autocomplete="on" onsubmit="alert('Formulário Enviado!');">
+                Nome: <input type="text" name="name"><br>
+                Idade: <input type="number" name="number"><br>
+                Senha: <input type="password" name="password"><br>
+                <button type="submit">Enviar</button></form>
+            </p>
+    
+</body>
+</html>
