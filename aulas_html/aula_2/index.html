@@ -84,6 +84,58 @@
                 <button type="submit">Enviar</button></form>
                 
             </p>
+            <h2>Resumo da parte 2</h2>
+            <h3>Tag &lt;input/&gt; e como usá-la</h3>
+            <p>A Tag é um campo onde você vai inserir valores, mas ele tem vários tipos(MESMO).</p>
+            <p>O professor mencionou que algumas funcionalidades que estão disponíveis em algum navegador 
+                <br>as vezes pode não estar disponível em outro navegador, quando falamos da tag &lt;input/&gt;.</p>
+                <p>Nesse momento tentaremos explicar cada parâmetro presente na tag.</p>
+                <form action="#" name="taglist" autocomplete="off">
+                    <label for="text">Text:</label><input type="text" name="text" >
+                    <p>Aqui foi digitado a tag &lt;input/&gt; com o parâmetro <i> "text"</i>. </p>
+                    <label for="number">Number:</label><input type="number" name="number"
+                    min="0" max="99" step="5">
+                    <p>Aqui foi digitado a tag &lt;input/&gt; com o parâmetro <i> "number"</i>, o qual serve para inserir apenas números.</p>
+                    <p>Foi inserido também um <br>atributo chamado de <i> "min"</i>, o qual serve para não aceitar números que vem antes do mínimo que você setou neste campo, e um outro atributo chamado <i>"max"</i>, para não passar do maxímo que você setou.</p>
+                    <p>Coloquei também outro atributo chamado de <i>"step"</i> e botei "5" como parâmetro, fazendo que quando utilizar a setinha para aumentar ou diminuir, aumente ou diminua de 5 em 5.</p>
+                    <label for="button">Button:</label><input type="button" name="button" id="button" value="Send" type="button">
+                    <p>Aqui foi digitado a tag &lt;input/&gt; com o parâmetro <i> "button"</i>.</p>
+                    <p>Atenção: é preferível <strong>não usar</strong> este parâmetro em input por questões de semântica. <br> É preferível usar diretamente a tag &lt;button&gt; para fazer isso.</p>
+                    <label for="range">Range:</label><input type="range" name="range" id="range" value="0" min="0" max="100">
+                    <p>Aqui foi digitado a tag &lt;input/&gt; com o parâmetro <i> "range"</i>. Este parâmetro gera uma "barra de volume"</p>
+                    <label for="color">Color:</label><input type="color" name="color" id="color">
+                    <p>Aqui foi digitado a tag &lt;input/&gt; com o parâmetro <i> "color"</i>. Este parâmetro gera um campo relacionado a cores.</p>
+                    <label for="email">Email:</label><input type="email" name="email" id="email">
+                     </label><input type="submit" name="button" id="button" value="Enviar">
+                    <p>Aqui foi digitado a tag &lt;input/&gt; com o parâmetro <i> "email"</i>. Se você clicar no botão "Enviar", verá que ele pedirá um campo preenchido com "@".</p>
+                     <label for="URL">URL:</label><input type="url" name="url" id="url">
+                     </label><input type="submit" name="button" id="button" value="Enviar">
+                     <p>Aqui foi digitado a tag &lt;input/&gt; com o parâmetro <i> "url"</i>. Se você clicar no botão "Enviar", verá que ele pedirá um campo preenchido com "http://".</p>
+                     <label for="date">Date:</label><input type="date" name="date" id="date">
+                     <p>Aqui foi digitado a tag &lt;input/&gt; com o parâmetro <i> "date"</i>.Este parâmetro gera um calendário em formato dia/mes/ano, pois o navegador está em português. </p>
+                     <label for="week">Week:</label>:</label><input type="week" name="week" id="week">
+                     <p>Aqui foi digitado a tag &lt;input/&gt; com o parâmetro <i> "week"</i>. Serve para selecionar a semana do ano.Ele não funciona no Firefox.</p>
+                     <label for="month">Month:</label>:</label><input type="month" name="month" id="month">
+                     <p>Aqui foi digitado a tag &lt;input/&gt; com o parâmetro <i> "month"</i>. Serve para selecionar o mês do ano.Ele não funciona no Firefox.</p>
+                     <label for="checkbox">Checkbox</label>:</label><input type="checkbox" name="checkbox" id="checkbox">
+                     <input type="checkbox" name="checkbox" id="checkbox">
+                     <p>Aqui foi digitado a tag &lt;input/&gt; com o parâmetro <i> "checkbox"</i>. Serve para gerar uma caixinha a ser marcada para algum fim. <br>
+                    Geralmente presente naqueles termos de uso de aplicativos, jogos, etc... 
+                    <br>Útil para fazer checklists.</p>
+                    <label for="radio">Radio</label>:</label><input type="radio" name="radio" id="radio">
+                    <input type="radio" name="radio" id="radio">
+                    <p>Aqui foi digitado a tag &lt;input/&gt; com o parâmetro <i> "radio"</i>. Serve para marcar uma caixa, assim como no checkbox, porém só pode marcar um ou outro.</p>
+                    <label for="hidden">Hidden:</label><input type="hidden" name="hidden" id="hidden">
+                    <p>Aqui foi digitado a tag &lt;input/&gt; com o parâmetro <i> "hidden"</i>. <br>Pelo que pesquisei no google, serve para questões de segurança, geralmente serve para mandar uma informação não visível para o usuário ao servidor..</p>
+                    <label for="file">File:</label><input type="file" name="file" id="file"
+                    multiple>
+                    <p>Aqui foi digitado a tag &lt;input/&gt; com o parâmetro <i> "file"</i>.
+                        <br> Serve para possibilitar ao usuário a anexação de arquivos. Ao usar esse parâmetro, é interessante usar o atributo <i>multiple</i>. 
+                        <br>O mesmo serve para permitir ao usuário selecionar vários arquivos. O padrão que vem nele é apenas 1 arquivo.</p>
+                </form>
+                <h2>Resumo da parte 3</h2>
+                <h3>Falando sobre Checkbox e Radio button</h3>
+                
     
 </body>
 </html>
