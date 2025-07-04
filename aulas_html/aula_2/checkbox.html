@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e Radio button</title>
+</head>
+<body>
+    <h1>Aprendendo sobre <strong><i>Checkbox e Radio</i></strong></h1>
+    <hr>
+    <h2>Como prosseguir com esses dois elementos em meu site? </h2>
+    <p>Caso queira voltar para a outra página clique <a href="index.html">aqui</a>.</p>
+    <h3>Pense na seguinte finalização de pedido:</h3>
+    <form action="#" method="get">
+        <h2>Você selecionou: Pizza de Calabresa</h2>
+        <p>Quais opcionais você deseja?</p>
+        <input type="checkbox" name="opcional[]" value="queijo"> +queijo<br>
+        <input type="checkbox" name="opcional[]" value="calabresa"> +calabresa<br>
+        <input type="checkbox" name="opcional[]" value="cebola"> +cebola<br>
+        <input type="checkbox" name="opcional[]" value="azeitona"> +azeitona<br>
+        <p>Borda recheada?</p>
+        <input type="radio" name="borda" value="sim">Sim<br>
+        <input type="radio" name="borda" value="nao">Não<br>
+        <p>Bebida?</p>
+        <input type="radio" name="bebida" value="suco">Suco<br>
+        <input type="radio" name="bebida" value="refrigerante">Coca-Cola<br>
+        <input type="radio" name="bebida" value="pepsi">Pepsi<br>
+        <input type="radio" name="bebida" value="sprite">Sprite<br>
+        <input type="radio" name="bebida" value="agua">Água<br>
+        <input type="radio" name="bebida" value="nenhum">Nenhum<br><br>
+
+        <button type="submit">Enviar pedido</button><br>
+    </form>
+        <p>Como escrevemos tudo isso dentro do editor?</p>
+        <p>Colocamos na parte onde ficam os itens  opcionais <strong>cumulativos</strong> da seguinte maneira:</p>
+        <p>&lt;form <i>action</i>="#" <i>method</i>="get"&gt;</p>
+        <p>&lt;h2&gt;Você selecionou: Pizza de Calabresa&lt;/h2&gt;</p>
+        <p>&lt;p&gt;Quais opcionais você deseja?&lt;/p&gt;</p>
+        <p>&lt;input <i>type</i>="checkbox" <i>name</i>="opcional[]" <i>value</i>="queijo"&gt; + queijo&lt;br&gt;</p>
+         <p>&lt;input <i>type</i>="checkbox" <i>name</i>="opcional[]" <i>value</i>="calabresa"&gt; + calabresa&lt;br&gt;</p>
+          <p>&lt;input <i>type</i>="checkbox" <i>name</i>="opcional[]" <i>value</i>="cebola"&gt; + cebola&lt;br&gt;</p>
+           <p>&lt;input <i>type</i>="checkbox" <i>name</i>="opcional[]" <i>value</i>="azeitona"&gt; + azeitona&lt;br&gt;</p>
+           <p>Pode reparar que no atributo <u><i>name</i></u> coloquei a variável "opcional" junto com "[]".</p>
+           <p>O professor explicou, que quando usamos "[]", estamos
+            <br>mandando essa informação para o servidor de maneira completa.
+            <br> Caso estivesse sem colchetes, apareceria apenas a última
+            <br>informação que foi marcada pelo usuário no campo opcional.
+            <br>Ex.: 
+            <br>Usuário marcou cebola, azeitona e calabresa. Caso não houvesse colchetes 
+            <br>apenas chegaria na sua linguagem back-end o ítem calabresa. 
+            <br>Por isso é sempre bom estudar esses pequenos detalhes nas aulas. 
+           </p>
+           <p>Agora vamos para os opcionais onde <strong>ou é um, ou é outro.</strong></p>
+           <p>&lt;p&gt;Borda recheada?&lt;/p&gt;</p>
+           <p>&lt;input <i>type</i>="radio" <i>name</i>="borda" <i>value</i>="sim"&gt;Sim&lt;br&gt;</p>
+           <p>&lt;input <i>type</i>="radio" <i>name</i>="borda" <i>value</i>="nao"&gt;Não&lt;br&gt;</p>
+           <p>&lt;p&gt;Bebida?&lt;/p&gt;</p>
+           <p>&lt;input <i>type</i>="radio" <i>name</i>="bebida" <i>value</i>="suco"&gt;Suco&lt;br&gt;</p>
+           <p>&lt;input <i>type</i>="radio" <i>name</i>="bebida" <i>value</i>="refrigerante"&gt;Coca-Cola&lt;br&gt;</p>
+           <p>&lt;input <i>type</i>="radio" <i>name</i>="bebida" <i>value</i>="pepsi"&gt;Pepsi&lt;br&gt;</p>
+           <p>&lt;input <i>type</i>="radio" <i>name</i>="bebida" <i>value</i>="sprite"&gt;Sprite&lt;br&gt;</p>
+           <p>&lt;input <i>type</i>="radio" <i>name</i>="bebida" <i>value</i>="agua"&gt;Água&lt;br&gt;</p>
+           <p>&lt;input <i>type</i>="radio" <i>name</i>="bebida" <i>value</i>="nenhum"&gt;Nenhum&lt;br&gt;</p>
+           <p>&lt;button <i>type</i>="submit"&gt;Enviar pedido&lt;/button&gt;&lt;br&gt;</p>
+           <p>Se repararmos no campo "Borda recheada?", os seus inputs possuem no atributo <i><u>name</u></i> a mesma variável "borda". 
+            <br>O que faz com que dê para marcar apenas um ou o outro. o mesmo serve para as bebidas, todos possuem a mesma variável.</p>
+            <p>Caso você não digitasse nada em <i>name</i> enquanto usa "radio", seria possível marcar várias opções, deixando de ser
+            <br> "um ou outro", o qual seria esse o propósito em usar "radio" para "um ou outro".</p>
+</body>
+</html>
